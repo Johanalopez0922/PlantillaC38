@@ -13,12 +13,6 @@ class Form {
     this.greeting.position(width / 2 - 300, height / 2 - 100);
   }
 
- /* setElementsStyle() {
-    this.titleImg.class("gameTitle");
-    this.input.class("customInput");
-    this.playButton.class("customButton");
-    this.greeting.class("greeting");
-  } */
 
   hide() {
     this.greeting.hide();
@@ -36,13 +30,12 @@ class Form {
       this.greeting.html(message);
       player.name = this.input.value();
       player.index = 1;
-      //player.addPlayer();
+      
     });
   }
 
   display() {
-   this.setElementsPosition();
-    //this.setElementsStyle();
+   this.setElementsPosition();    
     this.handleMousePressed();
   }
 }
